@@ -1,6 +1,5 @@
 const navBar = document.querySelector("#main-nav");
 const body = document.querySelector("#main-body");
-const todoList = document.querySelector("#main-todo-card");
 
 navBar.innerHTML = `<nav class="navbar navbar-expand-lg bg-body-tertiary">
 <div class="container-fluid">
@@ -20,7 +19,7 @@ navBar.innerHTML = `<nav class="navbar navbar-expand-lg bg-body-tertiary">
 </div>
 </nav>`
 
-todoList.innerHTML = `<div class="card mb-5" style="width: 18rem;">
+const todoList = `<div class="card mb-5" style="width: 18rem;">
 <div class="card-body">
     <div class="mb-3">
         <input type="title" class="form-control" name="title" placeholder="TODO">
@@ -38,4 +37,10 @@ todoList.innerHTML = `<div class="card mb-5" style="width: 18rem;">
         </div>
     </div>
 </div>
+</div>`
+
+body.innerHTML = `
+<div class="container bg-light-subtle d-flex flex-column align-items-center">
+    <h1 class="text-center mb-5">TO-DO</h1>
+    ${todoList}
 </div>`

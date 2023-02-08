@@ -1,4 +1,4 @@
-export const todoList = `<div class="card mb-5" style="width: 18rem;">
+export const todoCard = `<div class="card mb-5" style="width: 18rem;">
 <div class="card-body">
     <div class="mb-3">
         <input type="title" class="form-control" name="title" placeholder="TODO">

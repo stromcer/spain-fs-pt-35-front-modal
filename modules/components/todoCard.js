@@ -1,13 +1,15 @@
-export const todoList = `<div class="card mb-5" style="width: 18rem;">
-<div class="card-body">
-    <div class="mb-3">
-        <input type="title" class="form-control" name="title" placeholder="TODO">
+import { firstCardtodo } from "../data/todoCardsData.js";
+
+export const todoCard = `<div class="card mb-5" style="width: 18rem;">
+<div class="${firstCardtodo.urgent ? "bg-danger" : '' } card-body">
+    <div class="mb-3">  
+         <h3>${firstCardtodo.title}</h3>
     </div>
     <div class="mb-3">
-        <input type="date" class="form-control" name="date" placeholder="">
+        <p>${firstCardtodo.date}</p>
     </div>
     <div class="mb-3">
-        <textarea class="form-control" name="description" rows="3"></textarea>
+        <p>${firstCardtodo.description}</p>
     </div>
     <div class="mb-3">
         <div class="btn-group w-100" role="group" aria-label="Basic mixed styles example">

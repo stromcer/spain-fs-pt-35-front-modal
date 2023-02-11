@@ -6,9 +6,6 @@ export function NewTask(event){
     task.description = $("#taskDescription").value
     task.date = $("#taskDate").value
     task.urgent = $("#taskUrgent").checked ? true : false ;
-
-
-
     console.log(task)
-    
+    return task
 }
